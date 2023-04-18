@@ -23,7 +23,7 @@ function searchGameByName(games, query) {
 }
 
 
-const PORT = 5005;
+const PORT = process.argv[2] || 5005;
 
 // Create a new TCP server
 const server = net.createServer();
